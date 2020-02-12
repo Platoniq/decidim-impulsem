@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/decidim/decidim.git
+  remote: git://github.com/decidim/decidim.git
   revision: 4f7eb00b370cc7e10ac4e65438f7fea6027913c6
   branch: master
   specs:
@@ -803,4 +803,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.0.2
+   1.17.3
