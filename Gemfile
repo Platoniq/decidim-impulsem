@@ -3,8 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-
-DECIDIM_VERSION = {:github => "decidim/decidim", :branch => "master"}
+DECIDIM_VERSION={:github => "decidim/decidim", :branch => "master"}
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
