@@ -9,9 +9,9 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "bootsnap", "~> 1.3"
+gem "bootsnap", "~> 1.4"
 
-gem "puma", "~> 3.12.2"
+gem "puma", "~> 3.12"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
