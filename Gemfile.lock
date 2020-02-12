@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/decidim/decidim.git
+  remote: https://github.com/decidim/decidim.git
   revision: 4f7eb00b370cc7e10ac4e65438f7fea6027913c6
   branch: master
   specs:
