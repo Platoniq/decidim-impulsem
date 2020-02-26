@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/decidim/decidim.git
-  revision: d87ec8e612d507fdcb4e3b11630a5efa9470e60d
+  revision: e66e49a8dae5f5b3ce67c8e024a514d64fab373d
   branch: master
   specs:
     decidim (0.21.0.pre.dev)
@@ -270,7 +270,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.4.5)
+    bootsnap (1.4.6)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -415,7 +415,7 @@ GEM
     graphiql-rails (1.4.11)
       railties
       sprockets-rails
-    graphql (1.10.2)
+    graphql (1.10.3)
     hashdiff (1.0.0)
     hashie (3.6.0)
     health_check (3.0.0)
@@ -426,7 +426,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    httparty (0.17.3)
+    httparty (0.18.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     i18n (1.8.2)
@@ -563,7 +563,7 @@ GEM
     public_suffix (4.0.3)
     puma (3.12.2)
     raabro (1.1.6)
-    rack (2.2.2)
+    rack (2.0.9)
     rack-attack (6.2.2)
       rack (>= 1.0, < 3)
     rack-cors (1.1.1)
@@ -621,7 +621,7 @@ GEM
       wisper (>= 1.6.1)
     redcarpet (3.5.0)
     redis (4.1.3)
-    regexp_parser (1.6.0)
+    regexp_parser (1.7.0)
     request_store (1.5.0)
       rack (>= 1.4)
     responders (3.0.0)
@@ -671,7 +671,7 @@ GEM
     rubocop-rails (2.0.1)
       rack (>= 1.1)
       rubocop (>= 0.70.0)
-    rubocop-rspec (1.38.0)
+    rubocop-rspec (1.38.1)
       rubocop (>= 0.68.1)
     ruby-ole (1.2.12.2)
     ruby-progressbar (1.10.1)
@@ -695,9 +695,9 @@ GEM
     sentry-raven (2.13.0)
       faraday (>= 0.7.6, < 1.0)
     seven_zip_ruby (1.2.5)
-    sidekiq (5.2.7)
+    sidekiq (5.2.8)
       connection_pool (~> 2.2, >= 2.2.2)
-      rack (>= 1.5.0)
+      rack (< 2.1.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
     sidekiq-cron (1.1.0)
