@@ -12,12 +12,12 @@ gem "decidim", DECIDIM_VERSION
 
 gem "bootsnap", "~> 1.4"
 
-gem "puma", "~> 3.12"
+gem "puma", "~> 4.3"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 gem "health_check"
-gem "sidekiq", "~> 5.2"
+gem "sidekiq", "~> 6.0"
 gem "sidekiq-cron"
 gem "sentry-raven"
 gem "rspec"
