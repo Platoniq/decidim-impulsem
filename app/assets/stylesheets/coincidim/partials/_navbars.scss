@@ -1,0 +1,172 @@
+@import "variables";
+@import "foundation";
+@import "decidim/utils/settings";
+
+// Overide background default bar
+.title-bar{
+  background-color: $title-bar-bg;
+  background: $gradient-start;
+	background: linear-gradient(90deg, $gradient-start 0%, $gradient-end 100%);
+}
+
+.navbar{
+  // background-color: $navbar-bg;
+	background: linear-gradient(90deg, $gradient-start 0%, $gradient-end 100%);
+	// background: linear-gradient(90deg, darken($gradient-start, 5%) 0%, darken($gradient-end, 5%) 100%);
+	//
+  position: relative;
+  padding-bottom: 30px;
+
+	&::before,
+	&::after{
+	  border-bottom: 5px solid $body-background-color;
+	}
+	&::before{
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  height: 10px;
+	  background-size: 20px 40px;
+	  background-image:
+	    radial-gradient(circle at 10px -15px, transparent 20px, $body-background-color 21px);
+	}
+	&::after{
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  height: 15px;
+	  background-size: 40px 40px;
+	  background-image:
+	    radial-gradient(circle at 10px 26px, $body-background-color 20px, transparent 21px);
+	}
+}
+.main-nav__link {
+	a{
+	  color: $navbar-fg;
+	  font-weight: 600;
+		font-weight: 600;
+		border-radius: 5px;
+		box-shadow: none;
+
+	  &:hover{
+	    color: $navbar-fg-hover;
+	  }
+	}
+	&--active a {
+		box-shadow: none;
+		background-color: rgba(0,0,0,0.15);
+	}
+}
+.show-for-medium{
+  .main-nav__link a:hover{
+    box-shadow: inset 0 4px 0 0 lighten($primary, 10%);
+  }
+}
+
+.hide-for-medium{
+  .main-nav__link a:hover{
+    box-shadow: inset 4px 0 0 0 lighten($primary, 10%);
+  }
+
+  .topbar__user__login{
+    a{
+      color: $medium-gray;
+      font-weight: 600;
+
+      &:hover{
+        color: $anchor-color;
+      }
+    }
+  }
+}
+
+.off-canvas .close-button{
+  color: $secondary;
+}
+
+.dropdown.menu .is-active > a{
+  color: $link-color;
+}
+
+.topbar_{
+  &_menu{
+    padding: .125rem .5rem 0;
+    background: rgba(48, 65, 93, .1);
+    border-radius: 12.5%;
+
+    [data-toggle]{
+      margin-bottom: 0;
+    }
+
+    .icon--menu{
+      fill: $secondary;
+      width: 1em;
+      height: 1em;
+    }
+  }
+
+  &_edit__link a{
+    padding-left: 5px;
+    color: $link-color;
+
+    &:hover{
+      color: $link-color;
+    }
+  }
+
+  &_user__login{
+    a{
+      color: $link-color;
+      font-weight: 400;
+    }
+  }
+
+  &_dropmenu{
+    > ul > li > a{
+      color: $link-color;
+    }
+
+    .is-dropdown-submenu-parent{
+      > a,
+      &.is-active > a{
+        @include breakpoint(smallmedium down){
+          color: white;
+        }
+      }
+    }
+
+    .is-dropdown-submenu li a{
+      color: $link-color;
+    }
+  }
+
+  &_search{
+    input,
+    input:focus{
+      background-color: $navbar-bg;
+      color: $navbar-fg;
+    }
+
+    input::placeholder,
+    textarea::placeholder{
+      color: $navbar-fg;
+    }
+
+    svg{
+      color: $navbar-fg;
+    }
+  }
+}
+
+.logo-wrapper {
+	span {
+		color: $body-font-color !important;
+		&::before {
+			border-color: $body-font-color !important;
+		}
+	}
+}
