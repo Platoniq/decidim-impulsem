@@ -1,8 +1,15 @@
-@import "_variables";
+@import "variables";
+@import "coincidim/utils/mixins";
 
 .mini-footer{
-  background: #fff;
-  color: $body-font-color;
+    background: $body-background-color;
+    color: $body-font-color;
+}
+
+.footer-transition {
+  @include gradient-background($gradient-start, $gradient-end);
+  @include border-waves(transparent, $body-background-color, 40px);
+  margin-left: -15px
 }
 
 .decidim-logo{
@@ -13,12 +20,15 @@
 
 //Main footer
 .main-footer{
-  background-color: $gradient-start;
-  background: linear-gradient(90deg, $gradient-start 0%, $gradient-start 0%, $gradient-end 100%);
+  @include gradient-background($gradient-start, $gradient-end);
+  @include border-waves($body-background-color, transparent, 40px, "up");
 
   color: #fff;
 
-  a{
+  a {
     color: #fff;
   }
+}
+.main-footer a:hover, .mini-footer a:hover {
+    color: $link-color;
 }

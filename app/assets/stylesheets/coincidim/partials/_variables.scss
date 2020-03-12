@@ -35,7 +35,7 @@ $main-footer-bg: $gradient-start;
 $title-bar-bg: #fff;
 $link-color: #003640;
 $navbar-fg: $title-bar-bg;
-$navbar-fg-hover: #333;
+$navbar-fg-hover: $link-color;
 $navbar-bg: #f1f1f1;
 
 :root{

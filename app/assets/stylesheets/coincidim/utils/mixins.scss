@@ -1,0 +1,67 @@
+@mixin gradient-background($start, $end) {
+  background: $start;
+	background: linear-gradient(90deg, $start 0%, $end 100%);
+}
+
+@mixin border-waves($up-color, $down-color, $width: 20px, $direction: "down") {
+	$width2: $width + 1;
+	$border: $width / 4;
+	$height: $width / 2;
+	$height2: $height + $border;
+	$size: $width * 2;
+	$offset1: $height + $border;
+	$offset2: $width + $border + 1;
+
+	position: relative;
+  @if $direction == "up" {
+  	padding-top: $width;
+  } @else {
+  	padding-bottom: $width;
+  }
+
+
+	&::before,
+	&::after{
+	  // border-bottom: 5px solid $body-background-color;
+	  border-bottom: $border solid $down-color;
+	  width: 100%;
+	}
+	&::before{
+	  content: "";
+	  position: absolute;
+  	left: 0;
+  	right: 0;
+    $gradient: radial-gradient(circle at $height (-$offset1), $up-color $width, $down-color $width2);
+	  @if $direction == "up" {
+	  	top: 0;
+	  	$gradient: radial-gradient(circle at $height $width2, $down-color $width, $up-color $width2);;
+	  } @else {
+	  	bottom: 0;
+	  }
+	  // height: 10px;
+	  height: $height;
+	  // background-size: 20px 40px;
+	  background-size: $width $size;
+	  background-image: $gradient;
+	    	// radial-gradient(circle at 10px -15px, transparent 20px, $body-background-color 21px);
+	}
+	&::after{
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  $gradient: radial-gradient(circle at $height $offset2, $down-color $width, $up-color $width2);
+	  @if $direction == "up" {
+	  	top: 0;
+	    $gradient: radial-gradient(circle at $height (-$offset1), $up-color $width, $down-color $width2);
+	  } @else {
+	  	bottom: 0;
+	  }
+	  // height: 15px;
+	  height: $height2;
+	  // background-size: 40px 40px;
+	  background-size: $size $size;
+	    // radial-gradient(circle at 10px 26px, $body-background-color 20px, transparent 21px);
+	  background-image: $gradient;
+	}
+}
