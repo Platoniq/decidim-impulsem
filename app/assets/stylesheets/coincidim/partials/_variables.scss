@@ -1,20 +1,20 @@
 // Variables
 
-$primary: #ef604d !default;
-$primary-rgb: 239,96,77 !default;
-$secondary: #599aa6 !default;
-$secondary-rgb: 89,154,166 !default;
-$success: #57d685 !default;
-$success-rgb: 87,214,133 !default;
-$warning: #ffae00 !default;
-$warning-rgb: 255,174,0 !default;
-$alert: #ec5840 !default;
-$alert-rgb: 236,88,64 !default;
+$primary: #d7263d !default;
+$primary-rgb: 215,38,61 !default;
+$secondary: #4bb3fd !default;
+$secondary-rgb: 75,179,253 !default;
+$success: #90cf36 !default;
+$success-rgb: 144,207,54 !default;
+$warning: #fc9f5b !default;
+$warning-rgb: 252,159,91 !default;
+$alert: #ff5964 !default;
+$alert-rgb: 255,89,100 !default;
 
-$proposals: #238ff7 !default;
-$actions: #57d685 !default;
-$debates: #fa6c96 !default;
-$meetings: #fabc6c !default;
+$proposals: #4bb3fd !default;
+$actions: #90cf36 !default;
+$debates: #ff5964 !default;
+$meetings: #fc9f5b !default;
 
 $twitter: #55acee !default;
 $facebook: #3b5998 !default;
@@ -28,12 +28,14 @@ $color-removal: #ffeef0 !default;
 $gradient-start: #09aee9;
 $gradient-end: #2bf597;
 $body-font-color: #494949;
-$body-background-color: #fafafa;
+$body-background-color: #f7fff7;
 $main-footer-bg: $gradient-start;
+$card-link: #599aa6;
 
 // Custom vars
 $title-bar-bg: #fff;
 $link-color: #003640;
+$link-color: #16444c;
 $navbar-fg: $title-bar-bg;
 $navbar-fg-hover: $link-color;
 $navbar-bg: #f1f1f1;

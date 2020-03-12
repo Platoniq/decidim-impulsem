@@ -23,8 +23,9 @@
 	&::before,
 	&::after{
 	  // border-bottom: 5px solid $body-background-color;
-	  border-bottom: $border solid $down-color;
+	  // border-bottom: $border solid $down-color;
 	  width: 100%;
+	  z-index: 10;
 	}
 	&::before{
 	  content: "";

@@ -1,0 +1,32 @@
+@import "variables";
+@import "coincidim/utils/mixins";
+
+.process-header {
+  @include border-waves($body-background-color, transparent, $wave-size, "up");
+  margin-left: -($wave-size);
+  padding-left: $wave-size;
+  padding-top:0;
+  @include gradient-background(#02182b, $gradient-start);
+	.process-header__main {
+		background-color: transparent;
+		clip-path: none;
+		&::after {
+			content: none;
+		}
+	}
+}
+
+.card__link {
+	color: $card-link;
+}
+
+.card--secondary {
+	@include gradient-background(#4a6f7b26, #dceee508);
+	border: none;
+	.filters__section {
+		border: none;
+	}
+	.button--muted {
+		background-color: $card-link;
+	}
+}
