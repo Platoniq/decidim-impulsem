@@ -1,22 +1,26 @@
 @import "variables";
 @import "coincidim/utils/mixins";
 
+.wrapper-home {
+  padding: 2rem 1rem;
+}
+
 .home-section:nth-of-type(2n+1) {
 	background-color: $body-background-color;
 }
 
 .home-section {
 	&.hero, &.highligted-content-banner {
-	  @include border-waves($body-background-color, transparent, 40px, "up");
-	  margin-left: -15px;
-	  padding-left: 15px;
+	  @include border-waves($body-background-color, transparent, $wave-size, "up");
+	  margin-left: -($wave-size);
+	  padding-left: $wave-size;
 
 	  &::after {
 	  	background-color: transparent;
 	  }
 
 	  >.hero__container, >.highligted-content-banner__container {
-	  	@include border-waves(transparent, $body-background-color, 40px, "down");
+	  	@include border-waves(transparent, $body-background-color, $wave-size, "down");
 	  }
 	}
 }

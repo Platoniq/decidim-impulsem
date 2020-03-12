@@ -12,7 +12,7 @@
     .language-choose > ul > li > a{
       font-weight: 600;
     }
-    @include border-waves(transparent, $body-background-color, 40px);
+    @include border-waves(transparent, $body-background-color, $wave-size);
   }
 }
 
@@ -25,9 +25,9 @@
 .navbar{
   @include gradient-background($gradient-start, $gradient-end);
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: $wave-size;
 
-  @include border-waves(transparent, $body-background-color, 40px);
+  @include border-waves(transparent, $body-background-color, $wave-size);
 }
 
 .main-nav__link {
