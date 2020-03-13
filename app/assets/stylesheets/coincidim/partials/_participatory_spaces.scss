@@ -14,19 +14,28 @@
 			content: none;
 		}
 	}
+	&__phase {
+		@include irregular-border;
+	}
 }
 
 .card__link {
 	color: $card-link;
 }
 
-.card--secondary {
-	@include gradient-background(#4a6f7b26, #dceee508);
-	border: none;
-	.filters__section {
+.card- {
+	&-secondary {
+		@include gradient-background(#4a6f7b26, #dceee508);
 		border: none;
+		.filters__section {
+			border: none;
+		}
+		.button--muted {
+			background-color: $card-link;
+		}
 	}
-	.button--muted {
-		background-color: $card-link;
+
+	&-proposal {
+		@include irregular-border;
 	}
 }
