@@ -1,0 +1,37 @@
+@import "variables";
+@import "coincidim/utils/mixins";
+
+.callout{
+  margin: 1em;
+  border: 2px solid #777;
+  @include irregular-border;
+
+  &.primary{
+    border-color:$primary;
+    border-color:var(--primary);
+  }
+
+  &.secondary{
+    border-color:$secondary;
+    border-color:var(--secondary);
+  }
+
+  &.success{
+    border-color:$success;
+    border-color:var(--success);
+  }
+
+  &.warning{
+    border-color:$warning;
+    border-color:var(--warning);
+  }
+
+  &.alert{
+    border-color:$alert;
+    border-color:var(--alert);
+  }
+}
+
+.callout.flash{
+  margin-bottom: 1em;
+}
