@@ -10,6 +10,8 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
+gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
+
 gem "bootsnap", "~> 1.4"
 
 gem "puma", "~> 4.3"
@@ -17,8 +19,6 @@ gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 gem "health_check"
-gem "sidekiq", "~> 6.0"
-gem "sidekiq-cron"
 gem "sentry-raven"
 gem "rspec"
 
@@ -37,5 +37,7 @@ group :development do
 end
 
 group :production do
+  gem "sidekiq", "~> 6.0"
+  gem "sidekiq-cron"
   gem "fog-aws"
 end
