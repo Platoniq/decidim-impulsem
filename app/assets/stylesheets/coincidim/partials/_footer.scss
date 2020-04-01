@@ -19,6 +19,21 @@
   float: right;
 }
 
+.project-logos {
+  text-align: center;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 150px;
+    min-width: 100px;
+    width: 25%;
+    margin: 0 2em 1em;
+    height: auto;
+    &:last-child {
+      min-width:150px;
+    }
+  }
+}
 .cc-badge {
   filter: sepia(1) saturate(3) brightness(70%) hue-rotate(154deg)
 }

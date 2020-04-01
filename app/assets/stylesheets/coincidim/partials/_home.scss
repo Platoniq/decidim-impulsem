@@ -1,10 +1,17 @@
 @import "variables";
 @import "coincidim/utils/mixins";
 
+a:hover, a:focus {
+  color: #ad3a42;
+}
+
 .wrapper-home {
   padding: 2rem 1rem;
 }
 
+.off-canvas-wrapper {
+    background-color: $body-background-color;
+}
 .home-section:nth-of-type(2n+1) {
 	background-color: $body-background-color;
 }
