@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 # DECIDIM_VERSION={:git => 'https://github.com/decidim/decidim.git', :branch => 'master'}
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "0.21-stable" }
+DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.21-surveys" }
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
