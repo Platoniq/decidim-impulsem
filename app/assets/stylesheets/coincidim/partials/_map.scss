@@ -1,11 +1,12 @@
-@import "variables";
 @import "foundation";
+@import "variables  ";
+@import "decidim/utils/settings";
 
 /* Custom map size */
 .google-map {
   height: 480px;
 
-  @include breakpoint(mediumlarge){
+  @include breakpoint(mediumlarge up){
     height: 720px;
   }
 }
