@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim.git
-  revision: db2d773c46506cea2e29c6a9c99ea11646a5932d
+  revision: f2b98d9f2295b5891e5db831f3efaaf76703e4bc
   branch: temp/0.21-surveys
   specs:
     decidim (0.21.0)
@@ -176,6 +176,8 @@ GIT
       wisper-rspec (~> 1.0)
     decidim-forms (0.21.0)
       decidim-core (= 0.21.0)
+      wicked_pdf (~> 1.4)
+      wkhtmltopdf-binary (~> 0.12)
     decidim-generators (0.21.0)
       decidim-core (= 0.21.0)
     decidim-meetings (0.21.0)
@@ -287,7 +289,7 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     batch-loader (1.5.0)
-    bcrypt (3.1.13)
+    bcrypt (3.1.15)
     better_html (1.0.15)
       actionview (>= 4.0)
       activesupport (>= 4.0)
@@ -297,7 +299,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.4.6)
+    bootsnap (1.4.7)
       msgpack (~> 1.0)
     browser (2.7.1)
     builder (3.2.4)
@@ -391,7 +393,7 @@ GEM
       tzinfo
     etherpad-lite (0.3.0)
       rest-client (>= 1.6)
-    excon (0.75.0)
+    excon (0.76.0)
     execjs (2.7.0)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
@@ -456,7 +458,7 @@ GEM
     httparty (0.18.1)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     i18n-tasks (0.9.31)
       activesupport (>= 4.0.2)
@@ -722,7 +724,7 @@ GEM
     sentry-raven (3.0.0)
       faraday (>= 1.0)
     seven_zip_ruby (1.2.5)
-    sidekiq (6.1.0)
+    sidekiq (6.1.1)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -798,8 +800,11 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    wicked_pdf (1.4.0)
+      activesupport
     wisper (2.0.1)
     wisper-rspec (1.1.0)
+    wkhtmltopdf-binary (0.12.6.2)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -830,7 +835,7 @@ DEPENDENCIES
   web-console (~> 3.5)
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.6p146
 
 BUNDLED WITH
    1.17.3
