@@ -1,9 +1,10 @@
 @import "variables";
 @import "foundation";
 
+/* Custom map size */
 .google-map {
   height: 480px;
-  
+
   @include breakpoint(mediumlarge){
     height: 720px;
   }
