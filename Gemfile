@@ -12,7 +12,7 @@ gem "decidim", DECIDIM_VERSION
 
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome"
+gem "decidim-decidim_awesome", { git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "feature/component_map" }
 
 gem "bootsnap", "~> 1.4"
 
