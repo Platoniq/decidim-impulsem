@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: e90372c5c4a0d22b4b51424181275351642d61f3
+  revision: 37639c391506ee881afb7d23f9bdf31d97ab9e85
   branch: feature/component_map
   specs:
     decidim-decidim_awesome (0.3)
