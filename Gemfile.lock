@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 52436921ffd48a4d974c5afd1328e6f7d6e5743e
+  revision: 7ba17dfc081c08a748158fff7bffec08f45310e7
   branch: feature/component_map
   specs:
     decidim-decidim_awesome (0.3)
@@ -539,7 +539,7 @@ GEM
     multipart-post (2.1.1)
     mustache (1.1.1)
     netrc (0.11.0)
-    nio4r (2.5.3)
+    nio4r (2.5.4)
     nobspw (0.6.2)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
