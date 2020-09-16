@@ -1,0 +1,25 @@
+@import "foundation";
+@import "variables";
+@import "coincidim/utils/mixins";
+
+.awesome-map {
+  @include irregular-border;
+
+  margin: 2em;
+  padding: 13px;
+  background-color:$secondary;
+  background-color:var(--secondary);
+
+  @include breakpoint(small down) {
+    margin-right:0;
+    margin-left:0;
+    border-radius: 0;
+    padding: 2px;
+  }
+}
+
+.wrapper {
+  .row.column + .awesome-map {
+    margin-top: 0;
+  }
+}
