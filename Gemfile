@@ -4,15 +4,15 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 # DECIDIM_VERSION={:git => 'https://github.com/decidim/decidim.git', :branch => 'master'}
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.21-surveys" }
+DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.22-surveys" }
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer"
+gem "decidim-term_customizer", { git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"  }
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-decidim_awesome", { git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "feature/component_map" }
+gem "decidim-decidim_awesome", { git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "l10n_feature/component_map" }
 
 gem "bootsnap", "~> 1.4"
 
