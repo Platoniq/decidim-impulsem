@@ -12,6 +12,7 @@ AllCops:
     - "**/Rakefile"
   Exclude:
     - "**/vendor/**/*"
+    - "bin/*"
     - "db/**/*"
     - "node_modules/**/*"
   # Default formatter will be used if no -f/--format option is given.

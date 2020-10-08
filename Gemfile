@@ -4,15 +4,15 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 # DECIDIM_VERSION={:git => 'https://github.com/decidim/decidim.git', :branch => 'master'}
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.22-surveys" }
+DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.22-surveys" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "decidim-term_customizer", { git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"  }
+gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "l10n_feature/component_map"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-decidim_awesome", { git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "l10n_feature/component_map" }
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
 
 gem "bootsnap", "~> 1.4"
 
@@ -21,8 +21,8 @@ gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 gem "health_check"
-gem "sentry-raven"
 gem "rspec"
+gem "sentry-raven"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -39,7 +39,7 @@ group :development do
 end
 
 group :production do
+  gem "fog-aws"
   gem "sidekiq", "~> 6.0"
   gem "sidekiq-cron"
-  gem "fog-aws"
 end
