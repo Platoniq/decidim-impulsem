@@ -1,11 +1,10 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: e2cd0b5586fa87734dfc3d5f31eb55f6b37f7a0c
-  branch: l10n_feature/component_map
+  revision: 2c9c954b80a818b0182978c4a09734af954ccd3c
   specs:
-    decidim-decidim_awesome (0.3)
-      decidim-admin (>= 0.20.0)
-      decidim-core (>= 0.20.0)
+    decidim-decidim_awesome (0.4)
+      decidim-admin (>= 0.21.0)
+      decidim-core (>= 0.21.0)
       redcarpet (~> 3.4)
 
 GIT
