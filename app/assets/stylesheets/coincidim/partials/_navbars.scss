@@ -147,6 +147,12 @@
       color: white;
     }
   }
+
+  &_notifications,&_conversations{
+    .icon{
+      opacity: 0.8;
+    }
+  }
 }
 
 .logo-wrapper {
