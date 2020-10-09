@@ -31,11 +31,12 @@
 }
 
 .main-nav__link {
+  margin: 10px;
 	a{
 	  color: $navbar-fg;
 	  font-weight: 600;
 		border-radius: 5px;
-		box-shadow: none;
+    box-shadow: none;
 
 	  &:hover{
 	    color: $navbar-fg-hover;
@@ -47,9 +48,13 @@
 	}
 }
 .hide-for-medium{
+
   .topbar__user__login{
+    border-bottom: none;
+    border-top: none;
+
     a{
-      color: $medium-gray;
+      color: $secondary;
       font-weight: 600;
 
       &:hover{
@@ -136,6 +141,10 @@
     input:focus{
       background-color: $navbar-bg;
       color: $navbar-fg-hover;
+    }
+
+    &:not(:focus-within) button{
+      background-color: $secondary;
     }
 
     input::placeholder,
