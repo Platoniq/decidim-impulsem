@@ -15,6 +15,13 @@ checksums = [
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "55a9ca723b65b8d9eadb714818a89bb3",
       "/app/views/layouts/decidim/_organization_colors.html.erb" => "34f0d188a62108e7a57a1c270daed8bb"
     }
+  },
+  {
+    package: "decidim-blogs",
+    files: {
+      # views
+      "/app/views/decidim/blogs/posts/show.html.erb" => "e423fbdd6c7d5aab3e470a53c3f3f0d8"
+    }
   }
 ]
 
