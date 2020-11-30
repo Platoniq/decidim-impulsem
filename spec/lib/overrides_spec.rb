@@ -17,6 +17,13 @@ checksums = [
       # validators
       "/app/validators/etiquette_validator.rb" => "ef21db526e4bec7cc574777937214cc1"
     }
+  },
+  {
+    package: "decidim-proposals",
+    files: {
+      # forms
+      "/app/forms/decidim/proposals/proposal_wizard_create_step_form.rb" => "b99c3223f1e75f2a69a89ae9a3d28182"
+    }
   }
 ]
 
