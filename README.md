@@ -1,8 +1,12 @@
-# impulsem-esf
+# Decidim for the (CO)Incidim
 
 Free Open-Source participatory democracy, citizen participation and open government for cities and organizations
 
-This is the open-source repository for impulsem-esf, based on [Decidim](https://github.com/decidim/decidim).
+This is the open-source repository for https://coincidim.cat, based on [Decidim](https://github.com/decidim/decidim).
+
+![Test](https://github.com/Platoniq/decidim-coincidim/workflows/Test/badge.svg?branch=master)
+
+![Coincidim Homepage](app/assets/images/screenshot.jpg)
 
 ## Setting up the application
 
