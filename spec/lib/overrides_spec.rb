@@ -15,7 +15,7 @@ checksums = [
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "55a9ca723b65b8d9eadb714818a89bb3",
       "/app/views/layouts/decidim/_organization_colors.html.erb" => "34f0d188a62108e7a57a1c270daed8bb",
       # validators
-      "/app/validators/etiquette_validator.rb" => "ef21db526e4bec7cc574777937214cc1"
+      "/app/validators/etiquette_validator.rb" => "db6ce8501b07be1306123c9a01903df7"
     }
   },
   {

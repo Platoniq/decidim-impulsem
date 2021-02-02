@@ -7,16 +7,16 @@ Rails.application.config.to_prepare do
   EtiquetteValidator.class_eval do
     private
 
-    # accept 100% uppercases
+    # accept 50% uppercases
     def validate_caps(record, attribute, value)
-      return if value.scan(/[A-Z]/).length < value.length * options.fetch(:uppercase, 0.25)
+      return if value.scan(/[A-Z]/).length < value.length / 2
 
       record.errors.add(attribute, options[:message] || :too_much_caps)
     end
 
     # accept words with 3 characters or more
     def validate_length(record, attribute, value)
-      return if value.length >= options.fetch(:minimum, 3)
+      return if value.length > 3
 
       record.errors.add(attribute, options[:message] || :too_short)
     end
