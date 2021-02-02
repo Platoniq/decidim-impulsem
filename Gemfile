@@ -3,26 +3,26 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-# DECIDIM_VERSION={:git => 'https://github.com/decidim/decidim.git', :branch => 'master'}
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "temp/0.22-surveys" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "release/0.23-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
 # gem "decidim-initiatives", DECIDIM_VERSION
 
-gem "decidim-decidim_awesome", git: "https://github.com/Platoniq/decidim-module-decidim_awesome", branch: "feat/improve-map"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.22"
+gem "decidim-decidim_awesome", "~> 0.6.2"
+gem "decidim-notify", "~> 0.3.0"
+gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "temp/0.23"
 
 gem "bootsnap", "~> 1.4"
+gem "health_check"
+gem "sentry-rails"
+gem "sentry-ruby"
 
-gem "puma", "~> 4.3"
+gem "puma", ">= 4.3.5"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
-gem "health_check"
 gem "rspec"
-gem "sentry-raven"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
