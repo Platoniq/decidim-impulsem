@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/Platoniq/decidim.git", branch: "release/0.23-stable" }.freeze
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim.git", branch: "release/0.23-stable" }.freeze
 
 gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", DECIDIM_VERSION
@@ -15,7 +15,7 @@ gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-
 
 gem "bootsnap", "~> 1.4"
 gem "health_check"
-gem "sentry-rails"
+gem "sentry-rails", "4.1.6" # 4.1.7 has bug
 gem "sentry-ruby"
 
 gem "puma", ">= 4.3.5"
