@@ -15,7 +15,7 @@ gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-
 
 gem "bootsnap", "~> 1.4"
 gem "health_check"
-gem "sentry-rails", "4.1.6" # 4.1.7 has bug
+gem "sentry-rails"
 gem "sentry-ruby"
 
 gem "puma", ">= 4.3.5"
