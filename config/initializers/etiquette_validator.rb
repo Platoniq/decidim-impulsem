@@ -13,12 +13,5 @@ Rails.application.config.to_prepare do
 
       record.errors.add(attribute, options[:message] || :too_much_caps)
     end
-
-    # accept words with 3 characters or more
-    def validate_length(record, attribute, value)
-      return if value.length > 3
-
-      record.errors.add(attribute, options[:message] || :too_short)
-    end
   end
 end
