@@ -9,7 +9,7 @@ checksums = [
   {
     package: "decidim-admin",
     files: {
-      "/app/views/decidim/admin/organization_appearance/form/_colors.html.erb" => "926acd42a72c91263042502bdf50b400"
+      "/app/views/decidim/admin/organization_appearance/form/_colors.html.erb" => "725fc77b4c80f885b7b4191a75a06949"
     }
   },
   {
@@ -20,14 +20,7 @@ checksums = [
       "/app/views/layouts/decidim/_logo.html.erb" => "2713715db652c8107f1fe5f2c4d618b6",
       "/app/views/layouts/decidim/_mini_footer.html.erb" => "55a9ca723b65b8d9eadb714818a89bb3",
       # validators
-      "/app/validators/etiquette_validator.rb" => "db6ce8501b07be1306123c9a01903df7"
-    }
-  },
-  {
-    package: "decidim-proposals",
-    files: {
-      # forms
-      "/app/forms/decidim/proposals/proposal_wizard_create_step_form.rb" => "b99c3223f1e75f2a69a89ae9a3d28182"
+      "/app/validators/etiquette_validator.rb" => "f7a4a652005385a994208f1ab41c4f08"
     }
   }
 ]
