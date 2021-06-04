@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 9c9000cc9b0db701e33d0e295bda32a34d128afd
+  revision: 6e727c596d5bf943e01c975e6d600b8127961ade
   branch: custom-fields
   specs:
     decidim-decidim_awesome (0.7.1)
