@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Platoniq/decidim-module-decidim_awesome
-  revision: 432023730eb10ab364d523c25d9e4eb4dde6fcb9
+  revision: 9d231dd82e6edf8968075a5922b61785c02405d7
   branch: custom-fields
   specs:
     decidim-decidim_awesome (0.7.1)
@@ -344,7 +344,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     cookiejar (0.3.3)
     crack (0.4.5)
@@ -385,7 +385,7 @@ GEM
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    doorkeeper (5.5.1)
+    doorkeeper (5.5.2)
       railties (>= 5)
     doorkeeper-i18n (4.0.1)
     em-http-request (1.1.7)
@@ -438,7 +438,7 @@ GEM
     faraday-excon (1.1.0)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.1.0)
-    ffi (1.15.1)
+    ffi (1.15.3)
     file_validators (2.3.0)
       activemodel (>= 3.2)
       mime-types (>= 1.0)
@@ -581,10 +581,10 @@ GEM
     netrc (0.11.0)
     nio4r (2.5.7)
     nobspw (0.6.2)
-    nokogiri (1.11.6)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.6-x86_64-linux)
+    nokogiri (1.11.7-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.6)
     oauth2 (1.4.7)
@@ -701,7 +701,7 @@ GEM
       virtus (~> 1.0.5)
       wisper (>= 1.6.1)
     redcarpet (3.5.1)
-    redis (4.2.5)
+    redis (4.3.1)
     regexp_parser (2.1.1)
     request_store (1.5.0)
       rack (>= 1.4)
@@ -875,7 +875,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    websocket-driver (0.7.4)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     wicked_pdf (1.4.0)
